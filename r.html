@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="openSite('https://www.youtube.com/embed/iXGuWHb5INk')">calc</button>
+      <button onclick="openSite('https://games.construct.net/23234/latest')">gold</button>
+    <script>
+        function openSite(web) {
+            // Use prompt() to ask the user for a password
+            var password = prompt("Please enter the password");
+
+            // Check if the entered password is correct
+            if (password === "1234") {
+                // Password is correct, proceed with opening the site in an iframe
+                var win = window.open('about:blank', '_blank'); // Open a new blank window with specified parameters.
+                var url = web; // The site you want to visit
+                var iframe = win.document.createElement('iframe');
+
+                // Styling the iframe to fill the entire page and remove borders
+                iframe.style.width = "100%";
+                iframe.style.height = "100%";
+                iframe.style.border = "none";
+                iframe.src = url;
+
+                win.document.body.appendChild(iframe);
+
+                // Optionally, set the new tab's title to something generic
+                
+            } 
+        }
+    </script>
+  </body>
+</html>
