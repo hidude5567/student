@@ -3,23 +3,23 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>replit</title>
+        <title>linkst</title>
         <link href="s.css" rel="stylesheet" type="text/css" />
     </head>
     <button onclick="openSite('https://games.construct.net/27703/latest')">calc</button>
     <button onclick="openSite('https://games.construct.net/23234/latest')">gold</button>
-    <button onclick="openSite('https://hhh.appwrite.network')">snow rider</button>
-    <button onclick="openSite('https://hhhh.appwrite.network')">infinite craft</button>
+    <button><a href=h.html >snow rider</a></button>
+    <button onclick="openSite('http://codebeautify.org/htmlviewer')">code</button>
+    <button><a href=t.html >infinite craft</a></button>
     <script>
-        function openSite(web) {
+        function openSite(url) {
             // Use prompt() to ask the user for a password
             var password = prompt("Please enter the password");
 
             // Check if the entered password is correct
             if (password === "1234") {
                 // Password is correct, proceed with opening the site in an iframe
-                var win = window.open('about:blank', '_blank'); // Open a new blank window with specified parameters.
-                var url = web; // The site you want to visit
+                var win = window.open('about:blank', '_blank'); // Open a new blank window with specified parameters. // The site you want to visit
                 var iframe = win.document.createElement('iframe');
 
                 // Styling the iframe to fill the entire page and remove borders
