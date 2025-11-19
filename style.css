@@ -21,7 +21,7 @@ body {
   color: #b611a8;
   font-family: monospace;
   font-size: 100%;
-  text-align: left;
+  text-align: top;
   text-decoration: none
 }
 button {
@@ -61,4 +61,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+link {
+  color: #000000;
 }
