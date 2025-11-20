@@ -14,23 +14,16 @@
 <button><a href=t.html>infinite craft</a></button>
 <script>
     function openSite(url) {
-        // Use prompt() to ask the user for a password
-        // Password is correct, proceed with opening the site in an iframe
-        var win = window.open('about:blank', '_blank'); // Open a new blank window with specified parameters. // The site you want to visit
+        var win = window.open('about:blank', '_blank');
         var iframe = win.document.createElement('iframe');
 
-        // Styling the iframe to fill the entire page and remove borders
         iframe.style.width = "100%";
         iframe.style.height = "100%";
         iframe.style.border = "none";
         iframe.src = url;
 
         win.document.body.appendChild(iframe);
-
-        // Optionally, set the new tab's title to something generic
-        // https://t.co/f9uk5tHsWf
     } 
-        }
 </script>
 </body>
 
