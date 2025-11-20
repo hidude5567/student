@@ -1,4 +1,4 @@
-function doodoo() {
+function go() {
   location.href = "capca.html"
   
 }
